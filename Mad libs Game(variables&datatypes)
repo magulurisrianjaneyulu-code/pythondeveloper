@@ -1,0 +1,17 @@
+print("🎮 Mad Libs Game 🎮")
+
+name = input("Enter a name: ")
+place = input("Enter a place: ")
+animal = input("Enter an animal: ")
+adjective = input("Enter an adjective: ")
+verb = input("Enter a verb: ")
+
+story = f"""
+One day, {name} went to {place}.
+There, {name} saw a {adjective} {animal}.
+The {animal} suddenly started to {verb}!
+{name} was very surprised.
+"""
+
+print("\n📖 Your Mad Libs Story:")
+print(story)
