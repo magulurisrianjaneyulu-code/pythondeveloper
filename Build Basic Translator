@@ -1,0 +1,19 @@
+print("===== ENGLISH TO TELUGU TRANSLATOR =====")
+
+translations = {
+    "hello": "నమస్కారం",
+    "good": "మంచి",
+    "bad": "చెడు",
+    "water": "నీరు",
+    "food": "ఆహారం",
+    "friend": "స్నేహితుడు",
+    "love": "ప్రేమ",
+    "book": "పుస్తకం"
+}
+
+word = input("Enter an English word: ").lower()
+
+if word in translations:
+    print("Telugu:", translations[word])
+else:
+    print("Sorry, word not found.")
