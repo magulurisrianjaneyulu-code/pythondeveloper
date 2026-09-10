@@ -1,0 +1,78 @@
+[22:24, 10/09/2026] Anji: import random
+
+number = random.randint(1, 100)
+attempts = 0
+
+print("🎯 Guess the Number!")
+print("I'm thinking of a number between 1 and 100.")
+
+while True:
+    guess = int(input("Enter your guess: "))
+    attempts += 1
+
+    if guess == number:
+        print("🎉 Correct!")
+        print("You guessed it in", attempts, "attempts.")
+        break
+
+    elif guess < number:
+        print("📉 Too low! Try again.")
+
+    else:
+        print("📈 Too high! Try again.")
+[22:26, 10/09/2026] Anji: random.randint() → generates a random number
+input() → gets the player's guess
+int() → converts text to an integer
+if / elif / else → makes decisions
+while → repeats the game
+break → stops the loop
+==, <, > → comparisons
+Variables → number, guess, attempts
+[22:27, 10/09/2026] Anji: print("===== ENGLISH TO TELUGU TRANSLATOR =====")
+
+translations = {
+    "hello": "నమస్కారం",
+    "good": "మంచి",
+    "bad": "చెడు",
+    "water": "నీరు",
+    "food": "ఆహారం",
+    "friend": "స్నేహితుడు",
+    "love": "ప్రేమ",
+    "book": "పుస్తకం"
+}
+
+word = input("Enter an English word: ").lower()
+
+if word in translations:
+    print("Telugu:", translations[word])
+else:
+    print("Sorry, word not found.")
+[22:31, 10/09/2026] Anji: print("===== PYTHON QUIZ =====")
+
+questions = [
+    {
+        "question": "What is used to define a function in Python?",
+        "options": ["A. func", "B. def", "C. function", "D. define"],
+        "answer": "B"
+    },
+    {
+        "question": "Which data type uses [] in Python?",
+        "options": ["A. Tuple", "B. Dictionary", "C. List", "D. Set"],
+        "answer": "C"
+    },
+    {
+        "question": "What does 2 ** 3 give?",
+        "options": ["A. 5", "B. 6", "C. 8", "D. 9"],
+        "answer": "C"
+    }
+]
+
+score = 0
+
+for question in questions:
+    print("\n" + question["question"])
+
+    for option in question["options"]:
+        print(option)
+
+    answer = input("Enter your answer (A/B/C/D): ").upper()
